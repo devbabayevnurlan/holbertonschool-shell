@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Apache loq faylını IP və status koduna görə qruplaşdırır və sayır
+
+awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -nr
