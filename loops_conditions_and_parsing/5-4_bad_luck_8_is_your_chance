@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
-# Bu skript if, elif və else istifadə edərək 10 dəfə çap edir
+# Bu skript 4-cü və 8-ci dövrələr üçün xüsusi mesajlar çap edir
 i=1
 while [ "$i" -le 10 ]
 do
-    if [ "$i" -eq 9 ]
+    if [ "$i" -eq 4 ]
     then
-        echo "Best School"
-        echo "Hi"
-    elif [ "$i" -gt 10 ]
+        echo "bad luck"
+    elif [ "$i" -eq 8 ]
     then
-        # Bu hissə heç vaxt işləməyəcək, amma elif tələbini ödəyir
-        echo "End"
+        echo "good luck"
     else
         echo "Best School"
     fi
