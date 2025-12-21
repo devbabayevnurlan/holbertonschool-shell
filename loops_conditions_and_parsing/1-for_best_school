@@ -1,0 +1,2 @@
+#!/bin/bash
+printf 'Best School\n%.0s' {1..10}\
