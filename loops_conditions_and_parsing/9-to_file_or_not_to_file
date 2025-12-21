@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Bu skript 'school' faylı haqqında məlumat verir
+
+file="school"
+
+if [ -e "$file" ]
+then
+    echo "school file exists"
+
+    # Faylın boş olub-olmamasını yoxlayırıq (-s: ölçüsü 0-dan böyükdürsə)
+    if [ -s "$file" ]
+    then
+        echo "school file is not empty"
+    else
+        echo "school file is empty"
+    fi
+
+    # Faylın requlyar (adi) fayl olub-olmamasını yoxlayırıq
+    if [ -f "$file" ]
+    then
+        echo "school is a regular file"
+    fi
+else
+    echo "school file does not exist"
+fi
