@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Cari qovluqdakı fayl adlarının birinci defisdən sonrakı hissəsini çap edir
+for file in *
+do
+    # Dəyişənin daxilində birinci defis daxil olmaqla ondan əvvəlki hər şeyi silirik
+    echo "${file#*-}"
+done
