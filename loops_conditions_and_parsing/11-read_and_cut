@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# /etc/passwd faylından müəyyən sahələri oxuyub çap edir
+
+file="/etc/passwd"
+
+while IFS=":" read -r username password uid gid info home shell
+do
+    echo "$username"
+    echo "$uid"
+    echo "$home"
+done < "$file"
