@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# /etc/passwd faylındakı məlumatlardan istifadə edərək hekayə yaradır
+
+file="/etc/passwd"
+
+while IFS=":" read -r user password uid gid info home shell
+do
+    echo "The user $user is part of the $gid gang, lives in $home and rides $shell. $uid's place is protected by the passcode $password, more info about the user here: $info"
+done < "$file"
