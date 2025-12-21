@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-# /etc/passwd faylından username, uid və home qovluğunu oxuyur
+# /etc/passwd faylını oxuyur və username:uid:home formatında çap edir
 # İkinci sətir mütləq şərh olmalıdır
 
 while IFS=":" read -r user pass uid gid info home shell || [ -n "$user" ]
 do
-    echo "$user"
-    echo "$uid"
-    echo "$home"
+    echo "${user}:${uid}:${home}"
 done < /etc/passwd
