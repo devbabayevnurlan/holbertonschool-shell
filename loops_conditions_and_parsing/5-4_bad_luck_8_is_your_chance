@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
-# Bu skript 4-cü və 8-ci dövrələr üçün xüsusi mesajlar çap edir
-i=1
-while [ "$i" -le 10 ]
+# comment 
+count=1
+while [ $count -le 10 ];
 do
-    if [ "$i" -eq 4 ]
-    then
-        echo "bad luck"
-    elif [ "$i" -eq 8 ]
-    then
-        echo "good luck"
-    else
-        echo "Best School"
-    fi
-    i=$((i + 1))
+	echo "Best School"
+	if [ $count -eq 4 ];
+	then
+		echo "bad luck"
+	elif [ $count -eq 8 ];
+	then
+		echo "good luck"
+	fi
 done
