@@ -12,6 +12,6 @@ do
 		echo "bad luck from Italy";;
 	*)
 		echo "$count";;
-esac
+	esac
 	((count++))
 done
