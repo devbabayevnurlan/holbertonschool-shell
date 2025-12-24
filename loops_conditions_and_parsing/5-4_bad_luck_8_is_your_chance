@@ -9,7 +9,7 @@ do
 	elif [ $count -eq 8 ];
 	then
 		echo "good luck"
-	else;
+	else
 		echo "Best School"
 	fi
 	((count++))
