@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # comment line
-for file in *;
+for loops_conditions_and_parsing in *;
 do
-	echo "${file:1}"
+	echo "${loops_conditions_and_parsing#*-}"
 done 
