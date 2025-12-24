@@ -1,17 +1,20 @@
 #!/usr/bin/env bash
-# 1-dən 100-ə qədər FizzBuzz skripti
-for i in {1..100}
+# comment line
+count=1
+while [ $count -le 100 ];
 do
-    if (( i % 3 == 0 )) && (( i % 5 == 0 ))
-    then
-        echo "FizzBuzz"
-    elif (( i % 3 == 0 ))
-    then
-        echo "Fizz"
-    elif (( i % 5 == 0 ))
-    then
-        echo "Buzz"
-    else
-        echo "$i"
-    fi
+	if [ (( count % 5 == 0 && count % 3 == 0 )) ];
+	then
+		echo "FizzBuzz"
+	fi
+	if [ (( count % 5 == 0 )) ];
+        then
+                echo "Fizz"
+	fi
+	if [ (( count % 5 == 0 )) ];
+        then
+                echo "Buzz"
+	fi
+	echo "$count"
+	((count++))
 done
