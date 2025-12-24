@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# /etc/passwd faylından yalnız lazım olan sahələri oxuyur və çap edir
-# Shellcheck xətalarını aradan qaldırmaq üçün istifadə olunmayan sahələr _ ilə əvəz edilib
-
-while IFS=":" read -r user _ uid _ _ home _ || [ -n "$user" ]
-do
-    echo "${user}:${uid}:${home}"
+# comment line
+while IFS=":" read -r username uid home;
+do	
+	echo "$username"
+	echo "$uid"
+	echo "$home"
 done < /etc/passwd
