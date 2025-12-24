@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # comment line
-if [ -f "school" ];
+if [ -e "school" ];
 then
 	echo "school file exists"
-	if [ -n "school" ];
+	if [ -s "school" ];
 	then
  		echo "school file is empty"
 	else
 		echo "school file is not empty"
-		if [ "school" =~ ^[0-9]+$ ];
+		if [ -f "school"];
 		then
 			echo "school file is a regular file"
 		fi
