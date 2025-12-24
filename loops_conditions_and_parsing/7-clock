@@ -2,7 +2,7 @@
 # comment line
 minute_numbers=1
 hour_numbers=0
-while [ hour -le 12 ];
+while [ $hour_numbers -le 12 ];
 do
 	echo "$hour_numbers"
 	while [ $minute_numbers -le 59 ];
