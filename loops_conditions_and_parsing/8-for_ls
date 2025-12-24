@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # comment line
-a=/root/holbertonschool_shell
-for i in a;
+for file in *;
 do
-	echo "$i"
+	echo "{file:1}"
 done 
