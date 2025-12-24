@@ -3,18 +3,17 @@
 count=1
 while [ $count -le 100 ];
 do
-	if [ (( count % 5 == 0 && count % 3 == 0 )) ];
+	if (( count % 5 == 0 && count % 3 == 0 )) ;
 	then
 		echo "FizzBuzz"
-	fi
-	if [ (( count % 5 == 0 )) ];
+	elif (( count % 5 == 0 )) ;
         then
                 echo "Fizz"
-	fi
-	if [ (( count % 5 == 0 )) ];
+	elif (( count % 5 == 0 ));
         then
                 echo "Buzz"
 	fi
-	echo "$count"
+	else
+       		echo "$count"
 	((count++))
 done
