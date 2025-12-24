@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # comment line
-count = 1
-while [$count -ge 10]; 
+count=1
+while [ $count -le 10 ]; 
 do
 	echo "Best School"
 	((count++))
