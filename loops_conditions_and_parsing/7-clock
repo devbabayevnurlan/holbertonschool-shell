@@ -4,7 +4,7 @@ minute_numbers=1
 hour_numbers=0
 while [ $hour_numbers -le 12 ];
 do
-	echo "$hour_numbers"
+	echo "Hour: $hour_numbers"
 	while [ $minute_numbers -le 59 ];
 	do
 		echo "$minute_numbers"
