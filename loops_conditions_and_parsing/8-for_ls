@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Cari qovluqdakı fayl adlarının birinci defisdən sonrakı hissəsini çap edir
-for file in *
+# comment line
+a=/root/holbertonschool_shell
+for i in a;
 do
-    # Dəyişənin daxilində birinci defis daxil olmaqla ondan əvvəlki hər şeyi silirik
-    echo "${file#*-}"
-done
+	echo "$i"
+done 
