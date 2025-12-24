@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-#Bu
-i=1
-until [ "$i" -gt 10 ]
+# comment line
+count=1
+until [ $count -ge 10 ]
 do
-    echo "Best School"
-    i=$((i + 1))
+	echo "Best School"
 done
