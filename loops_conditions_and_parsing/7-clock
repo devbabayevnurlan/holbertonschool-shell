@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-# Bu skript saat və dəqiqələri çap edir
-h=0
-while [ "$h" -le 12 ]
+# comment line
+minute_numbers=1
+hour_numbers=0
+while [ hour -le 12 ];
 do
-    echo "Hour: $h"
-    m=1
-    while [ "$m" -le 59 ]
-    do
-        echo "$m"
-        m=$((m + 1))
-    done
-    h=$((h + 1))
+	echo "$hour_numbers"
+	while [ $minute_numbers -le 59 ];
+	do
+		echo "$minute_numbers"
+		((minute_numbers++))
+	done
+	((hour_numbers++))
 done
