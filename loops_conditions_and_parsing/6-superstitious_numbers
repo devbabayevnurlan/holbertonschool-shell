@@ -4,11 +4,11 @@ count=1
 while [ $count -le 20 ];
 do
 	case $count in
-	[ $count -eq 5 ]) 
+	$count -eq 5) 
 		echo "bad luck from China";;
-	[$count -eq 10 ])
+	$count -eq 10)
 		echo "bad luck from Japan";;
-	[ $count -eq 18 ])
+	$count -eq 18)
 		echo "bad luck from Italy";;
 	*)
 		echo "$count";;
