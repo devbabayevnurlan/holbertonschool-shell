@@ -12,8 +12,8 @@ do
 	elif (( count % 5 == 0 ));
         then
                 echo "Buzz"
-	fi
 	else
        		echo "$count"
+	fi
 	((count++))
 done
