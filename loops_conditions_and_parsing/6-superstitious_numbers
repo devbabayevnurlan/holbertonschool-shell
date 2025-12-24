@@ -1,24 +1,17 @@
 #!/usr/bin/env bash
-# Bu skript 1-dən 20-yə qədər sayır və xüsusi hallarda bad luck mesajları verir
-i=1
-while [ "$i" -le 20 ]
+# comment line
+count=1
+while [ $count -le 20 ];
 do
-    case "$i" in
-        4)
-            echo "$i"
-            echo "bad luck from China"
-            ;;
-        9)
-            echo "$i"
-            echo "bad luck from Japan"
-            ;;
-        17)
-            echo "$i"
-            echo "bad luck from Italy"
-            ;;
-        *)
-            echo "$i"
-            ;;
-    esac
-    i=$((i + 1))
+	case $count in
+	[ $count -eq 5 ]) 
+		echo "bad luck from China";;
+	[$count -eq 10 ])
+		echo "bad luck from Japan";;
+	[ $count -eq 18 ])
+		echo "bad luck from Italy";;
+	*)
+		echo "$count";;
+esac
+	((count++))
 done
