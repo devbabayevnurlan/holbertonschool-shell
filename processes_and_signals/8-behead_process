@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# comment line
+kill 7-highlander
+
