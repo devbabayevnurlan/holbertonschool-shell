@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env bash
 # comment line
 trap "echo 'I am invincible!!!'" SIGTERM
 while true;
