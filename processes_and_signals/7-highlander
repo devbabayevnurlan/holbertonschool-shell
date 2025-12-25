@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # comment line
-trap "echo 'Killed'" SIGTERM SIGINIT
+trap "echo 'Killed'; exit" SIGTERM SIGINIT
 while true;
 do
 	echo "To infinity and beyond"
