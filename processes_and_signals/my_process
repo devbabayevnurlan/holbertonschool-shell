@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# Bu skript sonsuz dövrdə /tmp/my_process faylına yazı yazır
-
-while true
-do
-  echo "I am alive!" >> /tmp/my_process
-  sleep 2
-done

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bu skript /tmp/my_process faylını özü yaradacaq
+
+while true
+do
+    echo "I am alive!" >> /tmp/my_process
+    sleep 2
+done
